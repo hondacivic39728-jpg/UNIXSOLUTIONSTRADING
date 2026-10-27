@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIX - Premium Acrylic & Forex</title>
+    <link rel="icon" type="image/png" sizes="100x100" href="iconnnn.png">
+    <meta name="theme-color" content="#00e5e5">
+    <style>
+        :root {
+            --primary: #00e5e5;
+            --primary-dark: #00b8b8;
+            --bg: #05090d;
+            --surface: #0b141b;
+            --surface-alt: #101d26;
+            --white: #ffffff;
+            --text: #eaf6ff;
+            --muted: #9fb7c4;
+            --border: rgba(0, 229, 229, 0.25);
+            --glow: rgba(0, 229, 229, 0.35);
+        }
+ 
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        img, iframe, svg, video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            background-color: var(--bg);
+            background-image:
+                radial-gradient(circle at top, rgba(0, 229, 229, 0.12), transparent 32%),
+                linear-gradient(rgba(5, 9, 13, 0.72), rgba(5, 9, 13, 0.72)),
+                url("background.2");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(12px);
+            background: rgba(5, 9, 13, 0.85);
+            box-shadow: 0 4px 18px rgba(0, 229, 229, 0.12);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+        }
+
+        .navbar {
+            width: min(1200px, 95%);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 0;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            font-size: clamp(1.05rem, 2vw, 1.35rem);
+            font-weight: 800;
+            color: var(--primary);
+            text-shadow: 0 0 12px var(--glow);
+            flex: 1 1 180px;
+        }
+ 
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex: 1 1 260px;
+        }
+
+        .nav-links a {
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-weight: 600;
+            color: var(--text);
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+ 
+        .nav-links a:hover {
+            background: var(--primary);
+            color: var(--bg);
+            box-shadow: 0 0 16px var(--glow);
+        }
+ 
+        .logo-wrap {
+            text-align: center;
+            padding: 28px 20px 10px;
+            background: transparent;
+        }
+
+        .logo-shell {
+            position: relative;
+            display: inline-block;
+            width: min(500px, 100%);
+            max-height: 250px;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            background: transparent;
+            filter: drop-shadow(0 0 16px rgba(0, 229, 229, 0.45));
+        }
+
+        .logo-base {
+            opacity: 0.22;
+            filter: saturate(0.4) brightness(0.7) drop-shadow(0 0 10px rgba(0, 229, 229, 0.15));
+        }
+
+        .logo-reveal {
+            position: absolute;
+            inset: 0;
+            opacity: 1;
+            clip-path: inset(0 100% 0 0);
+            animation: logoTypeReveal 3.5s steps(26, end) infinite;
+            filter: drop-shadow(0 0 18px rgba(0, 229, 229, 0.6));
+        }
+
+        @keyframes logoTypeReveal {
+            0%, 12% {
+                clip-path: inset(0 100% 0 0);
+                opacity: 0.2;
+            }
+            30%, 62% {
+                clip-path: inset(0 0 0 0);
+                opacity: 1;
+            }
+            78%, 100% {
+                clip-path: inset(0 100% 0 0);
+                opacity: 0.25;
+            }
+        }
+
+        .container {
+            width: min(1180px, 92%);
+            margin: 0 auto;
+        }
+  
+        .hero {
+            display: grid;
+            grid-template-columns: 1.08fr 0.92fr;
+            gap: 24px;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(11, 20, 27, 0.96), rgba(15, 26, 34, 0.92));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 36px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 229, 229, 0.08);
+            margin: 20px auto 28px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top right, rgba(0, 229, 229, 0.18), transparent 35%);
+            pointer-events: none;
+        }
+  
+        .hero h1 {
+            font-size: clamp(2.1rem, 4vw, 3.3rem);
+            color: var(--primary);
+            margin-bottom: 14px;
+            line-height: 1.12;
+            text-shadow: 0 0 18px var(--glow);
+        }
+  
+        .hero p {
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            max-width: 60ch;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 229, 229, 0.35);
+            background: rgba(0, 229, 229, 0.08);
+            color: var(--primary);
+            font-size: 0.74rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-weight: 800;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 12px var(--glow);
+        }
+ 
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+ 
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+ 
+        .btn-primary {
+            background: var(--primary);
+            color: var(--bg);
+            box-shadow: 0 0 18px var(--glow);
+        }
+ 
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 0 26px var(--glow);
+        }
+ 
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
+ 
+        .btn-secondary:hover {
+            background: rgba(0, 229, 229, 0.08);
+        }
+ 
+        .hero-card {
+            background: linear-gradient(135deg, #073539, #04191c);
+            color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            padding: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 229, 229, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+  
+        .hero-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--glow);
+        }
+  
+        .hero-card ul {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            color: var(--text);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(140px, 1fr));
+            gap: 18px;
+            margin: 0 auto 30px;
+        }
+
+        .stat-card {
+            background: rgba(9, 20, 26, 0.92);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 16px;
+            text-align: center;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.26);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: clamp(1.6rem, 2vw, 2.2rem);
+            font-weight: 800;
+            color: var(--primary);
+            text-shadow: 0 0 12px var(--glow);
+        }
+
+        .stat-card p {
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+ 
+        section {
+            margin: 42px auto;
+        }
+ 
+        .section-title {
+            font-size: clamp(1.7rem, 3vw, 2.3rem);
+            color: var(--primary);
+            margin-bottom: 8px;
+            width: 100%;
+            border-radius: 20px;
+            text-shadow: 0 0 14px var(--glow);
+            letter-spacing: -0.03em;
+        }
+
+        .underline {
+            width: 90px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), #66f5f5);
+            border-radius: 999px;
+            margin-bottom: 18px;
+            box-shadow: 0 0 12px var(--glow);
+        }
+
+        section {
+            margin: 42px auto;
+        }
+ 
+        .about-box {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 24px;
+            background: linear-gradient(135deg, rgba(11, 20, 27, 0.96), rgba(12, 24, 30, 0.96));
+            border: 1px solid rgba(0, 229, 229, 0.4);
+            border-radius: 28px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.46), 0 0 0 1px rgba(0, 229, 229, 0.14), 0 0 18px rgba(0, 229, 229, 0.08);
+            animation: aboutGlow 2.8s ease-in-out infinite alternate;
+        }
+
+        .about-box::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            border: 1px solid rgba(0, 229, 229, 0.85);
+            box-shadow: 0 0 8px rgba(0, 229, 229, 0.45), 0 0 18px rgba(0, 229, 229, 0.18);
+            opacity: 0.7;
+            animation: borderPulse 2.8s ease-in-out infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .about-box > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-box p,
+        .about-box li {
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+
+        .about-box .story-block {
+            display: grid;
+            gap: 10px;
+        }
+
+        .about-box .story-block > p:first-child {
+            font-size: 1.04rem;
+        }
+
+        @keyframes borderPulse {
+            0% {
+                opacity: 0.3;
+                box-shadow: 0 0 6px rgba(0, 229, 229, 0.18), 0 0 12px rgba(0, 229, 229, 0.08);
+            }
+            100% {
+                opacity: 0.9;
+                box-shadow: 0 0 14px rgba(0, 229, 229, 0.5), 0 0 26px rgba(0, 229, 229, 0.22);
+            }
+        }
+
+        @keyframes aboutGlow {
+            0% {
+                box-shadow: 0 20px 45px rgba(0, 0, 0, 0.46), 0 0 0 1px rgba(0, 229, 229, 0.08), 0 0 14px rgba(0, 229, 229, 0.06);
+                border-color: rgba(0, 229, 229, 0.25);
+            }
+            100% {
+                box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 229, 229, 0.18), 0 0 26px rgba(0, 229, 229, 0.16);
+                border-color: rgba(0, 229, 229, 0.45);
+            }
+        }
+
+        .about-box ul {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 18px;
+        }
+
+        .about-box li {
+            position: relative;
+            padding-left: 22px;
+            line-height: 1.6;
+        }
+
+        .about-box li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-weight: 900;
+        }
+
+  
+        .info-card {
+            border-radius: 22px;
+            padding: 24px 20px;
+            border: 1px solid rgba(0, 229, 229, 0.25);
+            background: linear-gradient(135deg, rgba(8, 32, 36, 0.98), rgba(12, 22, 29, 0.96));
+            box-shadow: inset 0 0 16px rgba(0, 229, 229, 0.06), 0 16px 28px rgba(0, 0, 0, 0.25);
+            align-self: start;
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+            text-shadow: 0 0 12px var(--glow);
+        }
+
+        .info-card p {
+            margin-bottom: 14px;
+            color: var(--muted);
+        }
+
+        .info-list {
+            list-style: none;
+            display: grid;
+            gap: 10px;
+            padding-top: 8px;
+        }
+
+        .info-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .info-list li::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 10px var(--glow);
+            flex-shrink: 0;
+            position: static;
+        }
+
+        .about-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 12px;
+            margin-bottom: 14px;
+            border-radius: 999px;
+            background: rgba(0, 229, 229, 0.08);
+            border: 1px solid rgba(0, 229, 229, 0.2);
+            color: var(--primary);
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .about-tag::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 12px var(--glow);
+        }
+
+        .partner-section {
+            background: linear-gradient(135deg, rgba(11, 20, 27, 0.96), rgba(12, 23, 31, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3), 0 0 28px rgba(0, 229, 229, 0.07);
+        }
+
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 18px;
+        }
+
+        .partner-card {
+            background: rgba(8, 18, 24, 0.92);
+            border: 1px solid rgba(0, 229, 229, 0.18);
+            border-radius: 20px;
+            padding: 22px 20px;
+            box-shadow: inset 0 0 18px rgba(0, 229, 229, 0.02);
+        }
+
+        .partner-card .mini-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            color: var(--primary);
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .partner-card .mini-tag::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 12px var(--glow);
+        }
+
+        .partner-card h3 {
+            color: var(--text);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .partner-card p {
+            color: var(--muted);
+            line-height: 1.65;
+        }
+ 
+        .acrylic-bar {
+            background: linear-gradient(90deg, #005a5f, #007a80);
+            color: var(--white);
+            padding: 18px 24px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-weight: 700;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 229, 229, 0.12);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 12px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(10, 25, 32, 0.96), rgba(7, 19, 24, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 22px 18px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto auto 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 229, 0.8), transparent);
+        }
+
+        .category-section {
+            background: linear-gradient(135deg, rgba(11, 20, 27, 0.96), rgba(12, 23, 31, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.26), 0 0 28px rgba(0, 229, 229, 0.05);
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(10, 25, 32, 0.96), rgba(7, 19, 24, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 22px 18px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 229, 229, 0.4);
+        }
+
+        .feature-card .icon {
+            width: 54px;
+            height: 54px;
+            display: grid;
+            place-items: center;
+            border-radius: 16px;
+            background: rgba(0, 229, 229, 0.1);
+            border: 1px solid rgba(0, 229, 229, 0.25);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .highlighted-section {
+            background: linear-gradient(135deg, rgba(11, 20, 27, 0.96), rgba(12, 23, 31, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.26), 0 0 28px rgba(0, 229, 229, 0.05);
+        }
+
+        .highlighted-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(180px, 1fr));
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .highlight-pill {
+            background: linear-gradient(135deg, rgba(10, 25, 32, 0.96), rgba(7, 19, 24, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px 14px;
+            text-align: center;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 0.94rem;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .highlight-pill::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 12px var(--glow);
+        }
+
+        .highlight-pill:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 229, 229, 0.4);
+            box-shadow: 0 18px 32px rgba(0, 0, 0, 0.32), 0 0 20px rgba(0, 229, 229, 0.12);
+        }
+
+        .highlight-pill:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 229, 229, 0.4);
+        }
+
+        .marquee-wrap {
+            position: relative;
+            margin: 22px auto 0;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(13, 33, 38, 0.94), rgba(8, 18, 24, 0.96));
+            box-shadow: inset 0 0 18px rgba(0, 229, 229, 0.06), 0 18px 38px rgba(0, 0, 0, 0.28);
+        }
+
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            gap: 18px;
+            padding: 18px 0;
+            white-space: nowrap;
+            animation: marquee-scroll 24s linear infinite;
+        }
+
+        .marquee-wrap:hover .marquee-track {
+            animation-play-state: paused;
+        }
+
+        .marquee-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 229, 229, 0.28);
+            background: linear-gradient(135deg, rgba(13, 52, 57, 0.9), rgba(6, 20, 25, 0.9));
+            color: var(--text);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.22), inset 0 0 12px rgba(0, 229, 229, 0.08);
+        }
+
+        .marquee-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #7ef6f6);
+            box-shadow: 0 0 14px rgba(0, 229, 229, 0.9);
+            flex-shrink: 0;
+        }
+
+        @keyframes marquee-scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+  
+        .Images {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .image-card {
+            background: linear-gradient(135deg, rgba(6, 53, 57, 0.96), rgba(8, 18, 24, 0.96));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 12px;
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 280px;
+            width: min(100%, 360px);
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .image-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.5), 0 0 26px rgba(0, 229, 229, 0.18);
+            border-color: rgba(0, 229, 229, 0.4);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            min-height: 240px;
+            object-fit: contain;
+            object-position: center center;
+            border-radius: 14px;
+            display: block;
+            background: var(--surface);
+            image-rendering: auto;
+            margin: 0 auto;
+        }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background: rgba(2, 7, 10, 0.82);
+            backdrop-filter: blur(6px);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+
+        .lightbox.open {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: auto;
+            max-width: min(92vw, 1100px);
+            max-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .lightbox-image {
+            display: block;
+            width: auto;
+            max-width: min(92vw, 1100px);
+            max-height: 90vh;
+            height: auto;
+            object-fit: contain;
+            border-radius: 18px;
+            border: 1px solid rgba(0, 229, 229, 0.4);
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.6), 0 0 26px rgba(0, 229, 229, 0.18);
+            background: #06161a;
+            cursor: zoom-out;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -14px;
+            right: -14px;
+            width: 42px;
+            height: 42px;
+            border: none;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--bg);
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 18px rgba(0, 229, 229, 0.4);
+        }
+
+        body.lightbox-open {
+            overflow: hidden;
+        }
+  
+        .FOREX {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 24px;
+            align-items: center;
+            background: linear-gradient(135deg, #0b141b, #0f1a22);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 28px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+ 
+        .FOREX-text h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            text-shadow: 0 0 14px var(--glow);
+        }
+ 
+        .FOREX-text p {
+            color: var(--muted);
+            font-size: 1.02rem;
+        }
+ 
+        .FOREX img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+        }
+ 
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 10px;
+        }
+ 
+        .service-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
+        }
+ 
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+            text-shadow: 0 0 10px var(--glow);
+        }
+ 
+        .service-card p {
+            color: var(--muted);
+        }
+ 
+        .contact-box {
+            background: linear-gradient(135deg, #073539, #04191c);
+            color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 229, 229, 0.1);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .contact-box p {
+            margin-top: 6px;
+            color: var(--text);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+            align-items: stretch;
+        }
+
+        .map-wrap,
+        .contact-photo {
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
+            background: rgba(7, 20, 24, 0.8);
+        }
+
+        .map-wrap iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            border: 0;
+        }
+
+        .contact-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            cursor: zoom-in;
+        }
+ 
+        footer {
+            text-align: center;
+            padding: 28px 20px 40px;
+            color: var(--muted);
+        }
+ 
+        .site-tools {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            padding: 8px 12px;
+            border: 1px solid rgba(0, 229, 229, 0.22);
+            border-radius: 18px;
+            background: linear-gradient(135deg, rgba(7, 28, 32, 0.9), rgba(15, 29, 38, 0.9));
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28), inset 0 0 18px rgba(0, 229, 229, 0.06);
+        }
+
+        .tool-btn {
+            appearance: none;
+            border: 1px solid rgba(0, 229, 229, 0.35);
+            border-radius: 14px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            cursor: pointer;
+            color: #dffcff;
+            background: linear-gradient(135deg, rgba(12, 54, 58, 0.95), rgba(7, 28, 32, 0.95));
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), 0 8px 18px rgba(0, 229, 229, 0.1);
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        #languageToggle {
+            background: linear-gradient(135deg, #0a8f8f, #00d7d7);
+            color: #031619;
+            border-color: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 10px 22px rgba(0, 229, 229, 0.28);
+        }
+
+        #contrastToggle {
+            background: linear-gradient(135deg, #0d1c2d, #153f54);
+            border-color: rgba(138, 212, 255, 0.45);
+        }
+
+        #themeSelect {
+            min-width: 150px;
+            background: linear-gradient(135deg, rgba(17, 38, 46, 0.95), rgba(8, 22, 30, 0.95));
+            color: var(--text);
+        }
+
+        .tool-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0, 229, 229, 0.18);
+            border-color: rgba(0, 229, 229, 0.7);
+        }
+
+        .tool-btn:focus-visible {
+            outline: 2px solid rgba(0, 229, 229, 0.8);
+            outline-offset: 2px;
+        }
+
+        body.high-contrast {
+            filter: contrast(1.2);
+        }
+
+        body[dir="rtl"] {
+            direction: rtl;
+            text-align: right;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        body[dir="rtl"] .navbar {
+            direction: rtl;
+        }
+
+        @media (max-width: 980px) {
+            .hero,
+            .about-box,
+            .FOREX,
+            .contact-box,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 28px 22px;
+            }
+
+            .stats-grid,
+            .feature-grid,
+            .partner-grid,
+            .highlighted-grid {
+                grid-template-columns: repeat(2, minmax(160px, 1fr));
+            }
+
+            .Images {
+                grid-template-columns: repeat(2, minmax(180px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: center;
+                gap: 12px;
+                padding: 14px 0;
+            }
+
+            .brand {
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links {
+                width: 100%;
+                order: 3;
+                justify-content: center;
+            }
+
+            .site-tools {
+                justify-content: center;
+                width: 100%;
+                order: 2;
+            }
+
+            .hero {
+                padding: 24px;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.8rem, 7vw, 2.4rem);
+            }
+
+            .category-section,
+            .highlighted-section,
+            .partner-section {
+                padding: 22px 18px;
+            }
+
+            .acrylic-bar {
+                justify-content: center;
+            }
+
+            body {
+                background-position: center top;
+                background-size: cover;
+                background-attachment: scroll;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .container {
+                width: min(94%, 1200px);
+            }
+
+            .logo-wrap {
+                padding-top: 18px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .site-tools {
+                padding: 10px;
+            }
+
+            .tool-btn {
+                flex: 1 1 calc(50% - 8px);
+                width: 100%;
+                text-align: center;
+            }
+
+            #themeSelect {
+                min-width: 0;
+            }
+
+            .stats-grid,
+            .feature-grid,
+            .partner-grid,
+            .highlighted-grid,
+            .Images {
+                grid-template-columns: 1fr;
+            }
+
+            .category-section,
+            .partner-section,
+            .highlighted-section {
+                padding: 20px 16px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .FOREX-text h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .navbar {
+                gap: 10px;
+            }
+
+            .nav-links {
+                gap: 8px;
+            }
+
+            .nav-links a {
+                padding: 7px 10px;
+                font-size: 0.78rem;
+            }
+
+            .brand {
+                font-size: 0.92rem;
+            }
+
+            .tool-btn {
+                flex-basis: 100%;
+            }
+
+            .hero,
+            .about-box,
+            .partner-section,
+            .category-section,
+            .highlighted-section,
+            .contact-box {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .highlight-pill {
+                min-height: 78px;
+                padding: 16px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="brand">UNIX Solutions Trading LLC</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="site-tools">
+                <button id="languageToggle" class="tool-btn" type="button">عربي</button>
+                <select id="themeSelect" class="tool-btn" aria-label="Choose theme">
+                    <option value="teal">Teal Glow</option>
+                    <option value="blue">Electric Blue</option>
+                    <option value="gold">Gold Luxe</option>
+                    <option value="purple">Violet Neon</option>
+                    <option value="rose">Rose Glow</option>
+                </select>
+                <button id="contrastToggle" class="tool-btn" type="button" aria-pressed="false">◐ Contrast</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="logo-wrap" aria-label="UNIX Solutions logo">
+        <div class="logo-shell">
+            <img class="logo logo-base" src="UNIX_Solutions_Neon_Logo_Transparent.png" alt="UNIX Solutions logo base">
+            <img class="logo logo-reveal" src="UNIX_Solutions_Neon_Logo_Transparent.png" alt="UNIX Solutions logo reveal">
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <div>
+                <div class="eyebrow">Trusted supply partner</div>
+                <h1>Premium Signage, Car Tinting &amp; MEP Materials.</h1>
+                <p>Unix Solutions Trading LLC is your one-stop source for premium signage, car tinting, and MEP materials—delivered with quality, reliability, and fast service.</p>
+                <div class="btn-group">
+                    <a class="btn btn-primary" href="#services">Explore Services</a>
+                    <a class="btn btn-secondary" href="#contact">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <h3>Why choose UNIX?</h3>
+                <ul>
+                    <li>✔ Premium quality products</li>
+                    <li>✔ Trusted supplier network</li>
+                    <li>✔ Reliable logistics and support</li>
+                    <li>✔ Commercial-grade material sourcing</li>
+                </ul>
+            </div>
+        </section>
+        <section class="marquee-wrap" aria-label="Featured material marquee">
+            <div class="marquee-track">
+                <div class="marquee-item"><span class="marquee-dot"></span>Premium Acrylic</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Car Tinting</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Flat Channel Lume</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Forex Sheets</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Tapes</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>MEP Colours Vinyls</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Electrical Items</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Reliable Service</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Premium Acrylic</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Car Tinting</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Flat Channel Lume</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Forex Sheets</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Tapes</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>LED &amp; Power Supply</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Electrical Items</div>
+                <div class="marquee-item"><span class="marquee-dot"></span>Reliable Service</div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <div class="underline"></div>
+            <div class="about-box">
+                <div class="story-block">
+                    <span class="about-tag">Company Overview</span>
+                    <p>Unix Solutions Trading LLC is a leading supplier and distributor of signage, car tinting, and MEP materials. Founded in 2025 as an advertising and event management company, Unix Solutions established a highly reputable client base before strategically diversifying into the trading and distribution of high-quality signage and commercial materials.</p>
+                    <p>Unix Solutions is your One-Stop Source for Premium Signage, Car Tinting, MEP Materials and other Items. We supply top-tier signage materials, high-performance window tinting films, and robust MEP components to contractors, businesses, and fabricators who refuse to compromise on quality.</p>
+                    <p>At Unix Solutions we bridge the gap between global manufacturers and local contractors. We understand that your projects rely on the integrity of your materials. That is why we source only certified, durable, and high-performance products designed to meet strict industry standards.</p>
+                    <p>Whether you are wrapping a fleet of vehicles, fabricating building facades, or installing complex mechanical systems, we deliver the materials you need—on time, every time.</p>
+                    
+                </div>
+                <aside class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>To supply certified, durable, and high-performance materials that power projects across signage, automotive, and MEP markets.</p>
+                    <ul class="info-list">
+                        <li>Trusted sourcing</li>
+                        <li>Quality-first supply</li>
+                        <li>Fast delivery</li>
+                        <li>Commercial support</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="partner-section" id="why-partner">
+            <h2 class="section-title">Why Partner with us?</h2>
+            <div class="underline"></div>
+            <div class="partner-grid">
+                <div class="partner-card">
+                    <div class="mini-tag">Quality</div>
+                    <h3>Uncompromising Quality</h3>
+                    <p>We meticulously source materials that undergo strict quality controls to ensure lasting performance in demanding environments.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="mini-tag">Inventory</div>
+                    <h3>Diverse Inventory</h3>
+                    <p>Skip the hassle of dealing with multiple vendors. Find your automotive, signage, and construction supplies under one reliable roof.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="mini-tag">Pricing</div>
+                    <h3>Competitive Wholesale Pricing</h3>
+                    <p>We maximize value for your business by offering fair, cost-effective pricing tiers on bulk orders.</p>
+                </div>
+                <div class="partner-card">
+                    <div class="mini-tag">Logistics</div>
+                    <h3>Dependable Logistics</h3>
+                    <p>Time is money. We prioritize fast order processing and efficient delivery to keep your projects moving without delay.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlighted-section">
+            <h2 class="section-title">Highlighted Products</h2>
+            <div class="underline"></div>
+            <div class="highlighted-grid">
+                <div class="highlight-pill">MEP Colour Vinyls</div>
+                <div class="highlight-pill">Foam Sheets</div>
+                <div class="highlight-pill">ACP Sheets</div>
+                <div class="highlight-pill">LED &amp; Power Supply</div>
+                <div class="highlight-pill">Channel Lume</div>
+                <div class="highlight-pill">Flat Channel Lume</div>
+                <div class="highlight-pill">Acrylic Sheets</div>
+                <div class="highlight-pill">Aluminium &amp; Plastic Detectable Warning Rolls</div>
+                <div class="highlight-pill">Tapes</div>
+                <div class="highlight-pill">Car Tinting</div>
+                <div class="highlight-pill">Electrical Items</div>
+                <div class="highlight-pill">Safety Items</div>
+            </div>
+        </section>
+
+        <section id="categories" class="category-section">
+            <h2 class="section-title">Our Core Product Categories</h2>
+            <div class="underline"></div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Signage Materials</h3>
+                    <p>From durable acrylic sheets, aluminum composite panels (ACP), and LED modules to digital print media and vinyl films. We provide the essential raw materials required to make your brand designs stand out.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>MEP Supplies</h3>
+                    <p>High-grade color vinyl stickers, engraving sheets, traffolyte sheets, aluminium detectable rolls, tapes, electrical items, and safety essentials for reliable project execution.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Car Tinting &amp; Window Films</h3>
+                    <p>Premium automotive films engineered for superior heat rejection, UV protection, scratch resistance, and optical clarity.</p>
+                </div> 
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Product Highlights</h2>
+            <div class="underline"></div>
+            <div class="Images">
+                <div class="image-card"><img src="Colorful UNIX Solutions Vinyl Roll Collection.png" alt="Colorful vinyl roll collection"></div>
+                <div class="image-card"><img src="UNIX Solutions Acrylic Sheet Showcase.png" alt="Acrylic sheet showcase"></div>
+                <div class="image-card"><img src="image.4.png" alt="Commercial material showcase"></div>
+            </div>
+        </section>
+
+        <section class="FOREX">
+    <div class="FOREX-text">
+        <h2>Flat Aluminium Channel Strip Roll</h2>
+        <p>Premium quality Flat Channel Strip Rolls available in multiple colours and designs. Durable, colorful, and perfect for modern sign and project applications.</p>
+    </div>
+    <img src="image 5.png" alt="Flat channel strip roll">
+</section>
+
+        <section class="FOREX">
+            <div class="FOREX-text">
+                <h2>FOREX SHEETS</h2>
+                <p>Premium quality forex sheets available in multiple finishes and sizes. Durable, stylish, and perfect for modern interiors and projects.</p>
+            </div>
+            <img src="image.3.png" alt="Forex sheets">
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="underline"></div>
+            <div class="contact-box">
+                <div>
+                    <h3>Get in touch with us</h3>
+                    <p>We are happy to help with orders, customization, and product details.</p>
+                </div>
+                <div>
+                    <p>📞 +971 052 678 7729</p>
+                    <p>✉️ unixsolutionstrading@gmail.com</p>
+                    <p>📍 Warehouse/Shabra No.0003,
+                        Jurf Industrial Zone 1 ,Ajman
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="map-wrap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7849037406436!2d55.51262387443425!3d25.43921542185732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f90036e2500d%3A0x55a70c05ee4f5f7a!2sUNIX%20SOLUTIONS%20TRADING%20LLC!5e1!3m2!1sen!2sae!4v1792872280143!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="UNIX Solutions location map"></iframe>
+                </div>
+                <div class="contact-photo" aria-label="UNIX Solutions storefront sign">
+                    <img src="board.png" alt="UNIX Solutions storefront sign and warehouse front">
+                </div>
+            </div>
+        </section>
+    </div> 
+
+    <footer>
+        © 2026 UNIX. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const languageToggle = document.getElementById("languageToggle");
+            const themeSelect = document.getElementById("themeSelect");
+            const contrastToggle = document.getElementById("contrastToggle");
+            if (!languageToggle || !themeSelect || !contrastToggle) return;
+
+            const translations = {
+                "UNIX Solutions Trading LLC": "يونكس للحلول التجارية",
+                "Home": "الرئيسية",
+                "About Us": "من نحن",
+                "Services": "الخدمات",
+                "Contact Us": "اتصل بنا",
+                "Trusted supply partner": "شريك توريد موثوق",
+                "Premium Signage, Car Tinting & MEP Materials.": "مواد لافتات، تظليل سيارات، ومواصفات MEP فاخرة.",
+                "Unix Solutions Trading LLC is your one-stop source for premium signage, car tinting, and MEP materials—delivered with quality, reliability, and fast service.": "يونكس للحلول التجارية هو مصدر واحد موثوق للمواد الفاخرة في اللافتات، تظليل السيارات، ومستلزمات MEP مع جودة وموثوقية خدمة سريعة.",
+                "Explore Services": "استكشف الخدمات",
+                "Why choose UNIX?": "لماذا تختار يونكس؟",
+                "✔ Premium quality products": "✔ منتجات عالية الجودة",
+                "✔ Trusted supplier network": "✔ شبكة موردين موثوقة",
+                "✔ Reliable logistics and support": "✔ دعم ولوجستيات موثوقة",
+                "✔ Commercial-grade material sourcing": "✔ توريد مواد تجارية عالية الجودة",
+                "Company Overview": "نظرة عامة",
+                "Our Mission": "مهمتنا",
+                "Trusted sourcing": "توريد موثوق",
+                "Quality-first supply": "توريد يركز على الجودة",
+                "Fast delivery": "تسليم سريع",
+                "Commercial support": "دعم تجاري",
+                "Why Partner with us?": "لماذا الشراكة معنا؟",
+                "Quality": "الجودة",
+                "Uncompromising Quality": "جودة لا تنازل عنها",
+                "Inventory": "المخزون",
+                "Diverse Inventory": "مخزون متنوع",
+                "Pricing": "التسعير",
+                "Competitive Wholesale Pricing": "أسعار تنافسية بالجملة",
+                "Logistics": "اللوجستيات",
+                "Dependable Logistics": "لوجستيات موثوقة",
+                "Highlighted Products": "منتجات مميزة",
+                "Our Core Product Categories": "فئات منتجاتنا الأساسية",
+                "Signage Materials": "مواد اللافتات",
+                "MEP Supplies": "مستلزمات MEP",
+                "Car Tinting & Window Films": "تظليل السيارات وأفلام النوافذ",
+                "Product Highlights": "إبرازات المنتجات",
+                "Flat Aluminium Channel Strip Roll": "لفافة شريط القناة الألومنيوم المسطح",
+                "FOREX SHEETS": "ألواح فوركس",
+                "Premium Acrylic Sheets": "ألواح أكريليك فاخرة",
+                "Forex Sheets": "ألواح فوركس",
+                "Custom Solutions": "حلول مخصصة",
+                "Unix Solutions Trading LLC is a leading supplier and distributor of signage, car tinting, and MEP materials. Founded in 2025 as an advertising and event management company, Unix Solutions established a highly reputable client base before strategically diversifying into the trading and distribution of high-quality signage and commercial materials.": "شركة يونكس للحلول التجارية هي مورد وموزع رائد لللافتات، تظليل السيارات، ومواد MEP. تأسست في 2025 كشركة للإعلان والإدارة الفعاليات، ثم توسعت بثقة لتصبح مركزاً موثوقاً في توزيع وبيع مواد اللافتات والمواد التجارية عالية الجودة.",
+                "Unix Solutions is your One-Stop Source for Premium Signage, Car Tinting, MEP Materials and other Items. We supply top-tier signage materials, high-performance window tinting films, and robust MEP components to contractors, businesses, and fabricators who refuse to compromise on quality.": "يونكس هي مصدرك الوحيد للحصول على لافتات فاخرة، تظليل سيارات، مواد MEP ومستلزمات أخرى. نوفر لك مواد لافتات من الدرجة الأولى، أفلام تظليل نوافذ عالية الأداء، ومكونات MEP متينة للمقاولين والشركات ومصنعي المشاريع الذين لا يقبلون بالتقليل من الجودة.",
+                "At Unix Solutions we bridge the gap between global manufacturers and local contractors. We understand that your projects rely on the integrity of your materials. That is why we source only certified, durable, and high-performance products designed to meet strict industry standards.": "في يونكس نربط الفجوة بين المصنعين العالميين والمقاولين المحليين. نحن ندرك أن مشاريعك تعتمد على قوة المواد المستخدمة. لذلك نختار فقط منتجات معتمدة ومتينة وعالية الأداء مصممة لتلبي معايير الصناعة الصارمة.",
+                "Whether you are wrapping a fleet of vehicles, fabricating building facades, or installing complex mechanical systems, we deliver the materials you need—on time, every time.": "سواء كنت تجهز أسطول سيارات، أو تصنع واجهات مباني، أو تنفذ أنظمة ميكانيكية معقدة، نوفر لك المواد التي تحتاجها في الوقت المناسب وبكل موثوقية.",
+                "We meticulously source materials that undergo strict quality controls to ensure lasting performance in demanding environments.": "نختار المواد بعناية فائقة بحيث تخضع لرقابة جودة صارمة لضمان أداء طويل الأمد في البيئات الصعبة.",
+                "Skip the hassle of dealing with multiple vendors. Find your automotive, signage, and construction supplies under one reliable roof.": "تجنب عناء التعامل مع عدد كبير من الموردين. ابحث عن مستلزماتك من السيارات واللافتات والبناء تحت سقف موثوق واحد.",
+                "We maximize value for your business by offering fair, cost-effective pricing tiers on bulk orders.": "نرفع قيمة مشروعك من خلال أسعار عادلة وفعالة على الطلبات الكبيرة.",
+                "Time is money. We prioritize fast order processing and efficient delivery to keep your projects moving without delay.": "الوقت ثمين. نركز على سرعة تجهيز الطلبات والتوصيل الفعال للحفاظ على تقدم مشاريعك دون تأخير.",
+                "From durable acrylic sheets, aluminum composite panels (ACP), and LED modules to digital print media and vinyl films. We provide the essential raw materials required to make your brand designs stand out.": "من ألواح الأكريليك المتينة، والألواح المركبة من الألومنيوم (ACP)، ووحدات الإضاءة LED إلى الوسائط الرقمية وأفلام الفينيل. نوفر المواد الخام الأساسية التي تجعل تصاميم علامتك التجارية تبرز.",
+                "High-grade color vinyl stickers, engraving sheets, traffolyte sheets, aluminium detectable rolls, tapes, electrical items, and safety essentials for reliable project execution.": "ملصقات فينيل ملونة عالية الجودة، وألواح النقش، وألواح ترافيليت، ولفات كاشفة من الألومنيوم، وأشرطة لاصقة، وقطع كهربائية، ومستلزمات سلامة لضمان تنفيذ مشاريع موثوق.",
+                "Premium automotive films engineered for superior heat rejection, UV protection, scratch resistance, and optical clarity.": "أفلام سيارات فاخرة مصممة لتوفير مقاومة حرارية ممتازة، وحماية من الأشعة فوق البنفسجية، ومقاومة للخدش، ووضوح بصري عالي.",
+                "Available in glossy, matte, transparent, black, white, and many vibrant shades.": "متوفرة في تشطيبات لامعة، وماتة، وشفافة، وأسود، وأبيض، بالإضافة إلى ألوان زاهية متعددة.",
+                "High-quality forex boards for interior design, signage, and modern decorative projects.": "ألواح فوركس عالية الجودة لتصميم الديكور الداخلي، واللافتات، والمشاريع الزخرفية الحديثة.",
+                "We help you choose the right finish and size for your design and budget.": "نساعدك في اختيار التشطيب والحجم المناسبين لتصميمك وميزانيتك.",
+                "To supply certified, durable, and high-performance materials that power projects across signage, automotive, and MEP markets.": "توفير مواد معتمدة ومتينة وعالية الأداء تدعم المشاريع في مجالات اللافتات والسيارات ومشاريع MEP.",
+                "Premium Acrylic": "أكريليك فاخر",
+                "Glossy Finish": "تشطيب لامع",
+                "Matte Finish": "تشطيب غير لامع",
+                "All Colors": "كل الألوان",
+                "PER Vinyl Roll": "لفافة فينيل بير",
+                "Modern Spaces": "أماكن حديثة",
+                "Reliable Service": "خدمة موثوقة",
+                "Vinyl Roll": "لفافة فينيل",
+                "Acrylic": "الأكريليك",
+                "Foam Sheets": "ألواح الرغوة",
+                "ACP Sheets": "ألواح ACP",
+                "LED & Power Supply": "إضاءة وتغذية",
+                "Channel Lume": "قناة الإضاءة",
+                "Flat Channel Lume": "قناة الإضاءة المسطحة",
+                "Colour Vinyls": "فينيل ألوان",
+                "Aluminium & Plastic Detectable Rolls": "لفات كاشفة من الألومنيوم والبلاستيك",
+                "Tapes": "أشرطة لاصقة",
+                "Car Tinting": "تظليل السيارات",
+                "Electrical Items": "قطع كهربائية",
+                "Safety Items": "قطع سلامة",
+                "Get in touch with us": "تواصل معنا",
+                "We are happy to help with orders, customization, and product details.": "يسعدنا مساعدتك في الطلبات والتخصيصات وتفاصيل المنتجات.",
+                "📞 +971 526 87729": "📞 +971 526 87729",
+                "✉️ unixsolution@gmail.com": "✉️ unixsolution@gmail.com",
+                "📍 Warehouse/Shabra No.0003,\n                        Jurf Industrial Zone 1 ,Ajman": "📍 مستودع/شبارة رقم 0003،\n                        منطقة الجرف الصناعية 1، عجمان",
+                "© 2026 UNIX. All rights reserved.": "© 2026 يونكس. جميع الحقوق محفوظة.",
+                "Teal Glow": "توهج أخضر مزرق",
+                "Electric Blue": "أزرق كهربائي",
+                "Gold Luxe": "ذهبي فاخر",
+                "Violet Neon": "بنفسجي نيون",
+                "Rose Glow": "وردي متوهج",
+                "English": "الإنجليزية",
+                "عربي": "English",
+                "◐ Contrast": "◐ تباين",
+                "◐ Normal Contrast": "◐ تباين طبيعي",
+                "UNIX": "يونكس",
+                "all rights reserved": "جميع الحقوق محفوظة"
+            };
+
+            const normalizeText = function (value) {
+                return (value || "").replace(/\s+/g, " ").trim();
+            };
+
+            function collectTextNodes(root) {
+                const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+                const texts = [];
+
+                while (walker.nextNode()) {
+                    const node = walker.currentNode;
+                    const value = normalizeText(node.textContent);
+                    const parent = node.parentElement;
+
+                    if (!value || !parent || parent.closest("script, style")) continue;
+                    if (parent.closest("button, select, option")) continue;
+
+                    if (!node._unixOriginalText) {
+                        node._unixOriginalText = value;
+                    }
+
+                    texts.push(node);
+                }
+
+                return texts;
+            }
+
+            function applyOptionLanguage() {
+                const themeOptions = document.querySelectorAll("#themeSelect option");
+                themeOptions.forEach(function (option) {
+                    const original = normalizeText(option.textContent);
+                    if (!original) return;
+                    option.textContent = isArabic ? (translations[original] || original) : original;
+                });
+            }
+
+            collectTextNodes(document.body);
+
+            let isArabic = false;
+            function applyLanguage() {
+                document.documentElement.lang = isArabic ? "ar" : "en";
+                document.documentElement.dir = isArabic ? "rtl" : "ltr";
+                document.body.dir = isArabic ? "rtl" : "ltr";
+
+                const texts = collectTextNodes(document.body);
+                texts.forEach(function (node) {
+                    const original = node._unixOriginalText || normalizeText(node.textContent);
+                    const translated = translations[original] || original;
+                    node.textContent = isArabic ? translated : original;
+                });
+
+                applyOptionLanguage();
+                languageToggle.textContent = isArabic ? "English" : "عربي";
+            }
+
+            languageToggle.addEventListener("click", function () {
+                isArabic = !isArabic;
+                applyLanguage();
+            });
+
+            const themes = {
+                teal: { primary: "#00e5e5", dark: "#00b8b8" },
+                blue: { primary: "#43a5ff", dark: "#1976d2" },
+                gold: { primary: "#f4c15d", dark: "#d49b2d" },
+                purple: { primary: "#c084fc", dark: "#9333ea" },
+                rose: { primary: "#ff7ca8", dark: "#e94d82" }
+            };
+
+            function applyTheme(value) {
+                const theme = themes[value] || themes.teal;
+                document.documentElement.style.setProperty("--primary", theme.primary);
+                document.documentElement.style.setProperty("--primary-dark", theme.dark);
+                localStorage.setItem("unixTheme", value);
+            }
+
+            themeSelect.addEventListener("change", function () {
+                applyTheme(this.value);
+            });
+
+            const savedTheme = localStorage.getItem("unixTheme");
+            if (savedTheme && themes[savedTheme]) {
+                themeSelect.value = savedTheme;
+                applyTheme(savedTheme);
+            }
+
+            contrastToggle.addEventListener("click", function () {
+                const enabled = document.body.classList.toggle("high-contrast");
+                contrastToggle.setAttribute("aria-pressed", String(enabled));
+                contrastToggle.textContent = enabled ? "◐ Normal Contrast" : "◐ Contrast";
+            });
+
+            const lightbox = document.createElement("div");
+            lightbox.className = "lightbox";
+            lightbox.setAttribute("aria-modal", "true");
+            lightbox.setAttribute("role", "dialog");
+
+            const lightboxContent = document.createElement("div");
+            lightboxContent.className = "lightbox-content";
+
+            const lightboxImage = document.createElement("img");
+            lightboxImage.className = "lightbox-image";
+            lightboxImage.alt = "Expanded product image";
+
+            const closeButton = document.createElement("button");
+            closeButton.className = "lightbox-close";
+            closeButton.type = "button";
+            closeButton.setAttribute("aria-label", "Close image preview");
+            closeButton.textContent = "×";
+
+            lightboxContent.append(closeButton, lightboxImage);
+            lightbox.appendChild(lightboxContent);
+            document.body.appendChild(lightbox);
+
+            function closeLightbox() {
+                lightbox.classList.remove("open");
+                document.body.classList.remove("lightbox-open");
+            }
+
+            function openLightbox(image) {
+                const src = image.getAttribute("src");
+                if (!src) return;
+
+                lightboxImage.src = src;
+                lightboxImage.alt = image.getAttribute("alt") || "Expanded product image";
+                lightboxImage.style.maxWidth = "92vw";
+                lightboxImage.style.maxHeight = "90vh";
+                lightbox.classList.add("open");
+                document.body.classList.add("lightbox-open");
+            }
+
+            document.querySelectorAll("img").forEach(function (image) {
+                image.style.cursor = "zoom-in";
+                image.addEventListener("click", function () {
+                    openLightbox(image);
+                });
+            });
+
+            closeButton.addEventListener("click", closeLightbox);
+            lightboxImage.addEventListener("click", closeLightbox);
+            lightbox.addEventListener("click", function (event) {
+                if (event.target === lightbox) closeLightbox();
+            });
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+            });
+        });
+    </script>
+
+</body>
+</html>
